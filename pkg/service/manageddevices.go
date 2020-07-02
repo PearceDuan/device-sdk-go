@@ -152,3 +152,25 @@ func (s *Service) UpdateDeviceOperatingState(deviceName string, state string) er
 
 	return err
 }
+
+// feature for unitechs
+// check device is register or not by device name or id
+func (s *Service) CheckForDevice(token string) (bool, error) {
+	device, err := common.DeviceClient.CheckForDevice(context.Background(), token)
+	if err != nil {
+		common.LoggingClient.Error(fmt.Sprintf("CheckForDevice failed %s, error: %v", token, err))
+	}
+	fmt.Println("device ======================= ", device)
+	return false, nil
+	//id, err = common.DeviceClient.Add(ctx, &device)
+	//if err != nil {
+	//	common.LoggingClient.Error(fmt.Sprintf("Add Device failed %s, error: %v", device.Name, err))
+	//	return "", err
+	//}
+	//if err = common.VerifyIdFormat(id, "Device"); err != nil {
+	//	return "", err
+	//}
+	//device.Id = id
+	//
+	//return id, nil
+}
