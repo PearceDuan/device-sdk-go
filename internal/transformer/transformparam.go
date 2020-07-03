@@ -11,9 +11,9 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	dsModels "github.com/pearceduan/device-sdk-go/pkg/models"
 )
 
 func TransformWriteParameter(cv *dsModels.CommandValue, pv contract.PropertyValue) error {

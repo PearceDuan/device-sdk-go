@@ -7,8 +7,8 @@
 package container
 
 import (
-	"github.com/edgexfoundry/device-sdk-go/internal/controller"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
+	"github.com/pearceduan/device-sdk-go/internal/controller"
 )
 
 // RestControllerName contains the name of RestController instance in the DIC.

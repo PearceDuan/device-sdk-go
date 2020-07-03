@@ -15,10 +15,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 	"github.com/google/uuid"
+	"github.com/pearceduan/device-sdk-go/internal/cache"
+	"github.com/pearceduan/device-sdk-go/internal/common"
 	"gopkg.in/yaml.v2"
 )
 

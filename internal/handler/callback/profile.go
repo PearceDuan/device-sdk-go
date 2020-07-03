@@ -12,10 +12,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/provision"
 	"github.com/google/uuid"
+	"github.com/pearceduan/device-sdk-go/internal/cache"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/provision"
 )
 
 func handleProfile(method string, id string) common.AppError {

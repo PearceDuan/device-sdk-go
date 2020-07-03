@@ -14,8 +14,8 @@ import (
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/mock"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/mock"
 )
 
 var ds []contract.Device

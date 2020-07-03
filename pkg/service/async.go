@@ -14,12 +14,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/handler"
-	"github.com/edgexfoundry/device-sdk-go/internal/transformer"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
+	"github.com/pearceduan/device-sdk-go/internal/cache"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/handler"
+	"github.com/pearceduan/device-sdk-go/internal/transformer"
+	dsModels "github.com/pearceduan/device-sdk-go/pkg/models"
 )
 
 // processAsyncResults processes readings that are pushed from

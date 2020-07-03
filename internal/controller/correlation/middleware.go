@@ -11,9 +11,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients"
 	"github.com/google/uuid"
+	"github.com/pearceduan/device-sdk-go/internal/common"
 )
 
 func ManageHeader(next http.Handler) http.Handler {

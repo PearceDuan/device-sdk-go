@@ -10,9 +10,9 @@ import (
 	"net"
 	"testing"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
 	bootstrapConfig "github.com/edgexfoundry/go-mod-bootstrap/config"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/logger"
+	"github.com/pearceduan/device-sdk-go/internal/common"
 )
 
 func TestCheckServiceAvailableByPingWithTimeoutError(test *testing.T) {

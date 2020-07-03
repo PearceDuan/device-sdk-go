@@ -13,10 +13,10 @@ import (
 	"time"
 
 	"github.com/OneOfOne/xxhash"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/handler"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/handler"
+	dsModels "github.com/pearceduan/device-sdk-go/pkg/models"
 )
 
 type Executor interface {

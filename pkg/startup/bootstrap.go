@@ -10,8 +10,8 @@ package startup
 import (
 	"context"
 
-	"github.com/edgexfoundry/device-sdk-go/pkg/service"
 	"github.com/gorilla/mux"
+	"github.com/pearceduan/device-sdk-go/pkg/service"
 )
 
 func Bootstrap(serviceName string, serviceVersion string, driver interface{}) {

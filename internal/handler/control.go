@@ -13,8 +13,8 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
 	"github.com/google/uuid"
+	"github.com/pearceduan/device-sdk-go/internal/common"
 )
 
 type discoveryLocker struct {

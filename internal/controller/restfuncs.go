@@ -15,12 +15,12 @@ import (
 	"net/http"
 	"runtime"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/handler"
-	"github.com/edgexfoundry/device-sdk-go/internal/handler/callback"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 	"github.com/gorilla/mux"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/handler"
+	"github.com/pearceduan/device-sdk-go/internal/handler/callback"
 )
 
 const (

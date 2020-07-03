@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/common"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
+	"github.com/pearceduan/device-sdk-go/internal/cache"
 )
 
 type Manager interface {

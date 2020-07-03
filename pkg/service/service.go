@@ -17,12 +17,12 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/autoevent"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
-	"github.com/edgexfoundry/device-sdk-go/internal/controller"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
+	"github.com/pearceduan/device-sdk-go/internal/autoevent"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/container"
+	"github.com/pearceduan/device-sdk-go/internal/controller"
+	dsModels "github.com/pearceduan/device-sdk-go/pkg/models"
 
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/types"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"

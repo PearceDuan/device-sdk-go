@@ -11,9 +11,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
 	"github.com/google/uuid"
+	"github.com/pearceduan/device-sdk-go/internal/cache"
+	"github.com/pearceduan/device-sdk-go/internal/common"
 )
 
 func handleProvisionWatcher(method string, id string) common.AppError {

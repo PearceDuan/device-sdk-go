@@ -26,8 +26,8 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/urlclient/retry"
 	"github.com/edgexfoundry/go-mod-registry/registry"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/endpoint"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/endpoint"
 )
 
 // NewData returns a URLClient that connects to a service attached to data.

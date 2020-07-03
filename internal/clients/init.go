@@ -19,8 +19,8 @@ import (
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/general"
 	"github.com/edgexfoundry/go-mod-core-contracts/clients/metadata"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/urlclient"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/urlclient"
 )
 
 // InitDependencyClients triggers Service Client Initializer to establish connection to Metadata and Core Data Services

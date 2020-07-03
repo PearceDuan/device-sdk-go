@@ -14,18 +14,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/autodiscovery"
-	"github.com/edgexfoundry/device-sdk-go/internal/autoevent"
-	"github.com/edgexfoundry/device-sdk-go/internal/cache"
-	"github.com/edgexfoundry/device-sdk-go/internal/clients"
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
-	"github.com/edgexfoundry/device-sdk-go/internal/provision"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
 	bootstrapContainer "github.com/edgexfoundry/go-mod-bootstrap/bootstrap/container"
 	"github.com/edgexfoundry/go-mod-bootstrap/bootstrap/startup"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
 	"github.com/gorilla/mux"
+	"github.com/pearceduan/device-sdk-go/internal/autodiscovery"
+	"github.com/pearceduan/device-sdk-go/internal/autoevent"
+	"github.com/pearceduan/device-sdk-go/internal/cache"
+	"github.com/pearceduan/device-sdk-go/internal/clients"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/container"
+	"github.com/pearceduan/device-sdk-go/internal/provision"
+	dsModels "github.com/pearceduan/device-sdk-go/pkg/models"
 )
 
 // Bootstrap contains references to dependencies required by the BootstrapHandler.

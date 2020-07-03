@@ -21,7 +21,7 @@ import (
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
 	"github.com/google/uuid"
 
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
+	dsModels "github.com/pearceduan/device-sdk-go/pkg/models"
 )
 
 var (

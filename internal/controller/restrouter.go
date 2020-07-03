@@ -13,10 +13,10 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/controller/correlation"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
 	"github.com/gorilla/mux"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/controller/correlation"
 )
 
 type RestController struct {

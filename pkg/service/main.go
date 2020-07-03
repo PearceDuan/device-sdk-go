@@ -11,10 +11,6 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
-	"github.com/edgexfoundry/device-sdk-go/internal/container"
-	"github.com/edgexfoundry/device-sdk-go/internal/controller"
-	dsModels "github.com/edgexfoundry/device-sdk-go/pkg/models"
 	"github.com/edgexfoundry/go-mod-bootstrap/bootstrap"
 	"github.com/edgexfoundry/go-mod-bootstrap/bootstrap/flags"
 	"github.com/edgexfoundry/go-mod-bootstrap/bootstrap/handlers/httpserver"
@@ -23,6 +19,10 @@ import (
 	"github.com/edgexfoundry/go-mod-bootstrap/bootstrap/startup"
 	"github.com/edgexfoundry/go-mod-bootstrap/di"
 	"github.com/gorilla/mux"
+	"github.com/pearceduan/device-sdk-go/internal/common"
+	"github.com/pearceduan/device-sdk-go/internal/container"
+	"github.com/pearceduan/device-sdk-go/internal/controller"
+	dsModels "github.com/pearceduan/device-sdk-go/pkg/models"
 )
 
 var instanceName string

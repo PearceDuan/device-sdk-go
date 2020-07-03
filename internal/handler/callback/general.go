@@ -10,8 +10,8 @@ package callback
 import (
 	"fmt"
 
-	"github.com/edgexfoundry/device-sdk-go/internal/common"
 	contract "github.com/edgexfoundry/go-mod-core-contracts/models"
+	"github.com/pearceduan/device-sdk-go/internal/common"
 )
 
 func CallbackHandler(cbAlert contract.CallbackAlert, method string) common.AppError {
