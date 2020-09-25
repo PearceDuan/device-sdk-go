@@ -52,6 +52,15 @@ func (s *Service) DeviceProfiles() []contract.DeviceProfile {
 	return cache.Profiles().All()
 }
 
+// DeviceProfiles return all managed DeviceProfiles from DB
+func (s *Service) DeviceProfilesFromDB() []contract.DeviceProfile {
+	profiles, err := common.DeviceProfileClient.DeviceProfiles(context.Background())
+	if err != nil {
+		common.LoggingClient.Error(fmt.Sprintf("DeviceProfilesFromDB error: %v", err))
+	}
+	return profiles
+}
+
 // RemoveDeviceProfile removes the specified DeviceProfile by id from the cache and ensures that the
 // instance in Core Metadata is also removed.
 func (s *Service) RemoveDeviceProfile(id string) error {
@@ -149,4 +158,18 @@ func (*Service) DeviceResource(deviceName string, deviceResource string, _ strin
 		return dr, false
 	}
 	return dr, true
+}
+
+func (*Service) DeviceResourceFromDB(deviceName string, deviceResource string, _ string) (contract.DeviceResource, bool) {
+	device, err := common.DeviceClient.DeviceForName(context.Background(), deviceName)
+	if err != nil {
+		common.LoggingClient.Error(fmt.Sprintf("retrieving DeviceResource - Device %s error", deviceName))
+		return contract.DeviceResource{}, false
+	}
+	for _, hit := range device.Profile.DeviceResources {
+		if hit.Name == deviceResource {
+			return hit, true
+		}
+	}
+	return contract.DeviceResource{}, false
 }
